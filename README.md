@@ -1,5 +1,5 @@
 # Sem2-C-project
-Member-
+Members-
 Ayush Singh
 Bhavini Madhuranath
 Ayushmaan Kaushik
