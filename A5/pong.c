@@ -3,12 +3,6 @@
 #include<stdlib.h>
 #include "include/raylib.h"
 
-
-
-
-int WINHEIGHT=900;
-int WINWIDTH=1600;
-
 //some structs we are using
 struct Slider_pong{
     //struct for all rectangles;
@@ -71,7 +65,7 @@ void Render(struct Slider_pong player1,struct Slider_pong player2,Rectangle red1
 }
 
 
-int main(){
+void pong(){
     //initializing elements
 
     //player1
@@ -84,7 +78,7 @@ int main(){
 
     //player2
     struct Slider_pong player2;
-    player2.rect.x=1500;
+    player2.rect.x=100;
     player2.rect.y=450;
     player2.rect.width=20;
     player2.rect.height=200;
@@ -92,7 +86,7 @@ int main(){
 
     //Death walls
     Rectangle red1={0,0,5,900};
-    Rectangle red2={0,1590,5,900};
+    Rectangle red2={0,1595,5,900};
 
     //Safe walls
     Rectangle blue1={0,0,1600,5};
@@ -108,8 +102,6 @@ int main(){
     ball.acceleration.x=0;
 
 
-    InitWindow(WINWIDTH,WINHEIGHT,"PongVer2");
-    SetTargetFPS(60);
     //mainloop which updates every 
     while(!WindowShouldClose()){
         BeginDrawing();
